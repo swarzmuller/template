@@ -1,0 +1,132 @@
+.typography {
+    margin: 6px 0;
+    padding: 0 181px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #7d7d7d;
+    border-top: 1px solid #c1cdb8;
+    border-bottom: 1px solid #c1cdb8;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        color: #262626;
+    }
+
+    h1 {
+        font-size: 44px;
+        margin: 36px 0 25px;
+    }
+
+    h2 {
+        font-size: 34px;
+        margin: 36px 0 25px;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin: 33px 0 22px;
+    }
+
+    h4 {
+        font-size: 20px;
+        margin: 31px 0 15px;
+    }
+
+    h5 {
+        font-size: 17px;
+        margin: 29px 0 10px;
+    }
+
+    h6 {
+        font-size: 13px;
+        margin: 23px 0 8px;
+    }
+
+    hr {
+        background: #c1cdb8;
+        margin-bottom: 4px;
+        border: none;
+        height: 1px;
+    }
+
+    img.alignleft {
+        float: left;
+        margin: 18px 47px 18px 0;
+    }
+
+    img.alignright {
+        float: right;
+        margin: 18px 18px 0 47px;
+    }
+
+    .wp-block-quote {
+        position: relative;
+        background: #3f5b2c;
+        padding: 20px 20px 20px 84px;
+        margin: 20px 0;
+
+        &::before {
+            position: absolute;
+            top: 63px;
+            left: 15px;
+            font-size: 79px;
+            color: #ffffff;
+            display: block;
+            content: '“';
+        }
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 56px;
+            width: 1px;
+            height: 114px;
+            transform: translateY(-50%);
+            background: #c5cdbf;
+            display: block;
+            content: '';
+        }
+
+        h4 {
+            line-height: 25px;
+            margin: 0 0 15px 0;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 15px;
+            color: #ffffff;
+        }
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 25px;
+        th, td {
+            text-align: center;
+            border: 1px solid;
+            padding: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .typography {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .typography {
+        padding: 0 10px;
+    }
+    .typography img.alignright, 
+    .typography img.alignleft {
+        float: none;
+        display: block;
+        margin: 18px auto;
+    }
+}

@@ -1,0 +1,131 @@
+.main {
+    border-bottom: 1px solid #c1cdb8;
+    margin: 6px 0;
+
+    &__image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin: 47px auto;
+
+        &::before,
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 42px;
+            display: block;
+            height: 1px;
+            width: 83px;
+            background: #c1cdb8;
+            transform: translate(-50%, -50%);
+            content: '';
+        }
+        &::after {
+            left: auto;
+            right: -42px;
+        }
+    }
+}
+
+.post {
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.list {
+    margin-bottom: 5px;
+    border-top: 1px solid #c1cdb8;
+    border-bottom: 1px solid #c1cdb8;
+}
+
+.text {
+    position: relative;
+    padding: 20px 50px;
+
+    &__date {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-style: italic;
+        color: #7d7d7d;
+    }
+
+    &__head {
+        font-size: 34px;
+        margin: 31px 0;
+        color: #262626;
+    }
+
+    &__descr {
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        color: #7d7d7d;
+    }
+
+    &__comments {
+        position: absolute;
+        bottom: 106px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        color: #7d7d7d;
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+        line-height: 9px;
+        border: 1px solid #f2f2f2;
+    }
+
+    &__img {
+        margin: 3px 0 0 3px;
+        width: 10px;
+        height: 10px;
+    }
+
+    &__btn {
+        display: block;
+        width: 167px;
+        padding: 15px 45px;
+        margin: 29px 0 60px 0;
+        background: #3f5b2c;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff
+    }
+}
+
+.pagination {
+    margin: 5px 0 10px 50px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.prev.page-numbers,
+.next.page-numbers {
+    background: url(assets/img/arrow.png) no-repeat center;
+}
+
+.prev.page-numbers {
+    transform: rotate(180deg);
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    font-size: 15px;
+    margin-right: 2px;
+    color: #262626;
+}
+
+.page-numbers.current {
+    background: #f5f4f2;
+}
